@@ -20,14 +20,14 @@ node {
 
 val npmBuild by tasks.registering(NpmTask::class) {
     dependsOn(tasks.named("openApiGenerate"))
-    setArgs(listOf("run-script", "build", "--prod"))
+    setArgs(listOf("run-script", "build"))
 }
 
 tasks {
     named("jar", Jar::class).configure {
         dependsOn(npmBuild)
         from("dist/client")
-        into("META-INF/resources/ui")
+        into("static/ui")
     }
 }
 

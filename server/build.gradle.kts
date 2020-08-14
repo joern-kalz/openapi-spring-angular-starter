@@ -18,6 +18,7 @@ dependencies {
     implementation("io.springfox:springfox-swagger2:2.8.0")
     implementation("org.openapitools:jackson-databind-nullable:0.1.0")
     implementation("javax.validation:validation-api")
+    runtimeOnly(project(":client"))
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
