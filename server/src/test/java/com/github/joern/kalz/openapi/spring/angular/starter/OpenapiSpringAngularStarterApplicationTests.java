@@ -1,4 +1,4 @@
-package com.github.joernkalz.openapispringangularstarter;
+package com.github.joern.kalz.openapi.spring.angular.starter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
